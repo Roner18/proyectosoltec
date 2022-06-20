@@ -13,7 +13,8 @@ session_start();
 <body>
     <button onclick="location.href='../regusuario.php'">Registrar Usuario</button><br>
     <?php
-         include '../controlador/usuariocontrolador.php';        
+         include '../controlador/usuariocontrolador.php'; 
+         // este es un mensaje nuevo       
         
     ?>
 </body>
