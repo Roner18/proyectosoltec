@@ -127,6 +127,28 @@
             return $usuario;
         }
 
+        // Obtener registros de la tabla "tusuario"
+        public static function ($usuario)
+        {
+            private $tusuario;
+
+            $this->$tusuario=array();
+
+            $query ="SELECT * from tusuario";
+
+            self::getConexion();
+
+            $resultado = self::$cnx->prepare($query);
+            $resultado->execute();
+            //$filas = $resultado->fetch();
+            while ($files=$resultado->fetch_assoc()) {
+                $this->tusuario[]=$files;
+            }
+
+            return $usuario;
+        }
+
+
          // Metodo que sirve para Actualizar Datos del usuario
          public static function actualizar($usuario)
          {

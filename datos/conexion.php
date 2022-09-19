@@ -6,7 +6,7 @@
         {
             try {
                 
-                $cn = new PDO("mysql:host=localhost;dbname=bdsoltec",
+                $cn = new PDO("mysql:host=localhost;dbname=soltecbd",
                 "root","");
                 
                 return $cn;

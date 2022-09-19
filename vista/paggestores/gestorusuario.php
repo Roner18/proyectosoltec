@@ -12,10 +12,6 @@ session_start();
     <h2><strong>Gestor de Usuarios</strong></h2>
 <body>
     <button onclick="location.href='../regusuario.php'">Registrar Usuario</button><br>
-    <?php
-         include '../controlador/usuariocontrolador.php'; 
-         // este es un mensaje nuevo       
-        
-    ?>
+ 
 </body>
 </html>
